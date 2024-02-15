@@ -17,8 +17,11 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         super.onViewCreated(view, savedInstanceState)
         val binding = FragmentMainBinding.bind(view)
         with(binding) {
-            mainReposButton.setOnClickListener {
+            mainNetworkButton.setOnClickListener {
                 navigator.goForward(Screens.Repos)
+            }
+            mainDatabaseButton.setOnClickListener {
+                navigator.goForward(Screens.Search)
             }
         }
     }

@@ -4,4 +4,5 @@ import java.io.Serializable
 object Screens {
     object Main : Screen, Serializable
     object Repos : Screen, Serializable
+    object Search : Screen, Serializable
 }

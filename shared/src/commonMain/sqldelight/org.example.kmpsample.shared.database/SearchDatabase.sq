@@ -1,0 +1,13 @@
+CREATE TABLE SearchRecentQueryDbModel (
+    text TEXT
+);
+
+getAllSearchRecentQueries:
+SELECT * FROM SearchRecentQueryDbModel;
+
+insertSearchRecentQuery:
+INSERT INTO SearchRecentQueryDbModel(text)
+VALUES (?);
+
+removeAllSearchRecentQueries:
+DELETE FROM SearchRecentQueryDbModel;

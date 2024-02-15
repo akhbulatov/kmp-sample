@@ -7,9 +7,15 @@
     android:padding="15dp">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/main_repos_button"
+        android:id="@+id/main_network_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Репозитории" />
+        android:text="Network" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_database_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Database" />
 
 </LinearLayout>
