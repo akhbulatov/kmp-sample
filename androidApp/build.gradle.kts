@@ -67,6 +67,8 @@ android {
 
         implementation(libs.androidx.lifecycle.viewmodel.ktx)
 
+        implementation(libs.androidx.datastore.core)
+
         implementation(libs.coroutines.android)
 
         implementation(libs.alligator)

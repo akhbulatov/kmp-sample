@@ -23,6 +23,9 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             mainDatabaseButton.setOnClickListener {
                 navigator.goForward(Screens.Search)
             }
+            mainPreferencesButton.setOnClickListener {
+                navigator.goForward(Screens.Auth)
+            }
         }
     }
 }

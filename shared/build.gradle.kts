@@ -9,7 +9,10 @@ kotlin {
     targets.configureEach {
         compilations.configureEach {
             compilerOptions.configure {
-                freeCompilerArgs.add("-Xexpect-actual-classes")
+                freeCompilerArgs.addAll(
+                    "-Xexpect-actual-classes",
+                    "-opt-in=kotlinx.cinterop.ExperimentalForeignApi"
+                )
             }
         }
     }
@@ -43,6 +46,7 @@ kotlin {
             implementation(libs.ktor.serialization.json)
             implementation(libs.serialization.json)
             implementation(libs.sqldelight.coroutines)
+            implementation(libs.androidx.datastore.core)
             api(libs.napier)
         }
 
