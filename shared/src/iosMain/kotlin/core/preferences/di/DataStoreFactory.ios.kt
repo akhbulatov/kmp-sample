@@ -10,7 +10,7 @@ import platform.Foundation.NSUserDomainMask
 object IosDataStoreFactory {
 
     fun provideDataStore(): DataStore<Preferences> {
-        return createDataStore(
+        return DataStoreFactory.createDataStore(
             producePath = {
                 val documentDirectory: NSURL? = NSFileManager.defaultManager.URLForDirectory(
                     directory = NSDocumentDirectory,
@@ -19,7 +19,7 @@ object IosDataStoreFactory {
                     create = false,
                     error = null,
                 )
-                requireNotNull(documentDirectory).path + "/$DATASTORE_FILE_NAME"
+                requireNotNull(documentDirectory).path + "/${DataStoreFactory.DATASTORE_FILE_NAME}"
             }
         )
     }
