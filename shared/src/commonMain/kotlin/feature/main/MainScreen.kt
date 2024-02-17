@@ -33,23 +33,17 @@ object MainScreen : Screen {
                 Button(
                     onClick = { navigator.push(ReposScreen) }
                 ) {
-                    Text(
-                        text = "Network"
-                    )
+                    Text(text = "Network")
                 }
                 Button(
                     onClick = { navigator.push(SearchScreen) }
                 ) {
-                    Text(
-                        text = "Database"
-                    )
+                    Text(text = "Database")
                 }
                 Button(
                     onClick = { navigator.push(AuthScreen) }
                 ) {
-                    Text(
-                        text = "Preferences"
-                    )
+                    Text(text = "Preferences")
                 }
             }
         }
