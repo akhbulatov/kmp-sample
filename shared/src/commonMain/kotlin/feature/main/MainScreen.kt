@@ -14,6 +14,7 @@ import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import feature.repo.ReposScreen
+import feature.search.SearchScreen
 
 object MainScreen : Screen {
 
@@ -36,7 +37,7 @@ object MainScreen : Screen {
                     )
                 }
                 Button(
-                    onClick = {}
+                    onClick = { navigator.push(SearchScreen) }
                 ) {
                     Text(
                         text = "Database"
