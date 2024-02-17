@@ -17,5 +17,5 @@ dependencyResolutionManagement {
     }
 }
 
-include(":androidApp")
+//include(":androidApp")
 include(":shared")
