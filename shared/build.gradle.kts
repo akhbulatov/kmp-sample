@@ -53,6 +53,8 @@ kotlin {
             implementation(libs.serialization.json)
             implementation(libs.sqldelight.coroutines)
             implementation(libs.androidx.datastore.core)
+            implementation(libs.voyager.navigator)
+            implementation(libs.voyager.screenModel)
             api(libs.napier)
         }
 

@@ -9,6 +9,7 @@ kotlin = "1.9.22"
 coroutines = "1.7.3"
 ktor = "2.3.8"
 sqldelight = "2.0.1"
+voyager = "1.0.0"
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -47,6 +48,9 @@ serialization-json = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2"
 sqldelight-android-driver = { module = "app.cash.sqldelight:android-driver", version.ref = "sqldelight" }
 sqldelight-native-driver = { module = "app.cash.sqldelight:native-driver", version.ref = "sqldelight" }
 sqldelight-coroutines = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqldelight" }
+
+voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+voyager-screenModel = { module = "cafe.adriel.voyager:voyager-screenmodel", version.ref = "voyager" }
 
 alligator = "com.github.aartikov.Alligator:alligator:4.5.0"
 
