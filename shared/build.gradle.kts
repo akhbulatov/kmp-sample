@@ -55,7 +55,8 @@ kotlin {
             implementation(libs.androidx.datastore.core)
             implementation(libs.voyager.navigator)
             implementation(libs.voyager.screenModel)
-            api(libs.napier)
+            implementation(libs.qrose)
+            implementation(libs.napier)
         }
 
         androidMain.dependencies {

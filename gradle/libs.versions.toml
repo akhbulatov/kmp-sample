@@ -44,4 +44,5 @@ sqldelight-coroutines = { module = "app.cash.sqldelight:coroutines-extensions", 
 voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
 voyager-screenModel = { module = "cafe.adriel.voyager:voyager-screenmodel", version.ref = "voyager" }
 
+qrose = "io.github.alexzhirkevich:qrose:1.0.0-beta3" # QR code
 napier = "io.github.aakira:napier:2.7.1"

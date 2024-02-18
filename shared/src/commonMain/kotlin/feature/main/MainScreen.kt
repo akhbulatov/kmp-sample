@@ -14,6 +14,7 @@ import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import feature.auth.AuthScreen
+import feature.barcode.BarcodeScreen
 import feature.repo.ReposScreen
 import feature.search.SearchScreen
 
@@ -44,6 +45,11 @@ object MainScreen : Screen {
                     onClick = { navigator.push(AuthScreen) }
                 ) {
                     Text(text = "Preferences")
+                }
+                Button(
+                    onClick = { navigator.push(BarcodeScreen) }
+                ) {
+                    Text(text = "Barcode")
                 }
             }
         }
