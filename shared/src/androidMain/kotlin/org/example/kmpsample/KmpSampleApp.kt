@@ -2,6 +2,7 @@ package org.example.kmpsample
 
 import android.app.Application
 import core.database.di.DatabaseSqlDriverFactory
+import core.location.LocationClient
 import core.preferences.di.AndroidDataStoreFactory
 import di.CommonFactory
 import io.github.aakira.napier.DebugAntilog
@@ -25,7 +26,8 @@ class KmpSampleApp : Application() {
         val commonFactory: CommonFactory by lazy {
             CommonFactory(
                 sqlDriverFactory = DatabaseSqlDriverFactory(context = instance.applicationContext),
-                dataStore = AndroidDataStoreFactory.provideDataStore(context = instance.applicationContext)
+                dataStore = AndroidDataStoreFactory.provideDataStore(context = instance.applicationContext),
+                locationClient = LocationClient(context = instance.applicationContext)
             )
         }
     }
