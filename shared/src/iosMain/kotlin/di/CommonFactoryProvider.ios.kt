@@ -1,6 +1,7 @@
 package di
 
 import core.database.di.DatabaseSqlDriverFactory
+import core.location.LocationClient
 import core.preferences.di.IosDataStoreFactory
 
 actual object CommonFactoryProvider {
@@ -14,7 +15,8 @@ actual object CommonFactoryProvider {
             } else {
                 CommonFactory(
                     sqlDriverFactory = DatabaseSqlDriverFactory(),
-                    dataStore = IosDataStoreFactory.provideDataStore()
+                    dataStore = IosDataStoreFactory.provideDataStore(),
+                    locationClient = LocationClient()
                 )
             }.also { commonFactorySingleton = it }
 }

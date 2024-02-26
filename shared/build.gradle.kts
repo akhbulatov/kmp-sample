@@ -63,7 +63,10 @@ kotlin {
             implementation(libs.androidx.activity)
             implementation(libs.androidx.activity.compose)
 
+            implementation(libs.playservices.location)
+
             implementation(libs.coroutines.android)
+            implementation(libs.coroutines.playservices)
             implementation(libs.ktor.client.android)
             implementation(libs.sqldelight.android.driver)
         }
