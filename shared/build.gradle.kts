@@ -69,6 +69,7 @@ kotlin {
             implementation(libs.coroutines.playservices)
             implementation(libs.ktor.client.android)
             implementation(libs.sqldelight.android.driver)
+            implementation(libs.pushy.android)
         }
 
         iosMain.dependencies {
