@@ -7,9 +7,9 @@ struct iOSApp: App {
         LoggerKt.doInitLogger()
     }
     
-	var body: some Scene {
-		WindowGroup {
-			ContentView()
-		}
-	}
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
 }
