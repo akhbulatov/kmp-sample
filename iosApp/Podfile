@@ -6,5 +6,6 @@ target 'iosApp' do
   use_frameworks!
 
   # Pods for iosApp
+  pod 'shared', :path => '../shared'
 
 end

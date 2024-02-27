@@ -1,3 +1,33 @@
-PODFILE CHECKSUM: c8b607a42d26f21541b1abb39b8ff3ab6670f169
+PODS:
+  - CocoaMQTT (2.1.0):
+    - CocoaMQTT/Core (= 2.1.0)
+  - CocoaMQTT/Core (2.1.0):
+    - MqttCocoaAsyncSocket (~> 1.0.8)
+  - MqttCocoaAsyncSocket (1.0.8)
+  - Pushy (1.0.51):
+    - CocoaMQTT (= 2.1.0)
+  - shared (1.0):
+    - Pushy (= 1.0.51)
+
+DEPENDENCIES:
+  - shared (from `../shared`)
+
+SPEC REPOS:
+  trunk:
+    - CocoaMQTT
+    - MqttCocoaAsyncSocket
+    - Pushy
+
+EXTERNAL SOURCES:
+  shared:
+    :path: "../shared"
+
+SPEC CHECKSUMS:
+  CocoaMQTT: 43666585403f664bb55361189c03c54897060324
+  MqttCocoaAsyncSocket: 77d3b74f76228dd5a05d1f9526eab101d415b30c
+  Pushy: d6e0f92f6f55956fab7c4d330e4eec797e77cb7c
+  shared: 142452121df537ed9ffb046e205ca2639454761c
+
+PODFILE CHECKSUM: 29615e4f973a271e86d100ece13d08df23fcac39
 
 COCOAPODS: 1.15.2
