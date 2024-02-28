@@ -6,15 +6,30 @@ import platform.UIKit.UIApplication
 
 actual class NotificationRegister {
 
+    private val pushy = Pushy(UIApplication.sharedApplication)
+
     actual fun register() {
-        val pushy = Pushy(UIApplication.sharedApplication())
-        if (!pushy.isRegistered()) {
-            pushy.register { error, deviceToken ->
-                Napier.d(
-                    tag = "NotificationRegister",
-                    message = "register callback:\n\terror=$error\n\ttoken=$deviceToken"
-                )
-            }
+        Napier.d(tag = "NotificationRegister", message = "register called.")
+        pushy.register { error, deviceToken ->
+            Napier.d(
+                tag = "NotificationRegister",
+                message = "register:\n\terror=$error\n\ttoken=$deviceToken"
+            )
+        }
+        setHandler()
+    }
+
+    private fun setHandler() {
+        // Enable in-app notification banners (iOS 10+)
+        pushy.toggleInAppBanner(value = true)
+
+        // Handle incoming notifications
+        pushy.setNotificationHandler { map, _ ->
+            // Print notification payload
+            Napier.d(
+                tag = "NotificationRegister",
+                message = "setNotificationHandler:\n\tmap=$map"
+            )
         }
     }
 }
