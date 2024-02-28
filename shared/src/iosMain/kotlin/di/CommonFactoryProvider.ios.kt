@@ -18,7 +18,7 @@ actual object CommonFactoryProvider {
                     sqlDriverFactory = DatabaseSqlDriverFactory(),
                     dataStore = IosDataStoreFactory.provideDataStore(),
                     locationClient = LocationClient(),
-                    notificationHelper = NotificationHelper() // TODO
+                    notificationHelper = NotificationHelper()
                 )
             }.also { commonFactorySingleton = it }
 }
