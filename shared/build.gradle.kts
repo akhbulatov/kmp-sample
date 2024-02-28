@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
+    alias(libs.plugins.kotlin.cocoapods)
     alias(libs.plugins.compose.multiplatform)
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.serialization)
@@ -37,6 +38,21 @@ kotlin {
         }
     }
 
+    cocoapods {
+        version = "1.0"
+        summary = "Some description for a Kotlin/Native module"
+        homepage = "Link to a Kotlin/Native module homepage"
+        ios.deploymentTarget = "14.1"
+        podfile = project.file("../iosApp/Podfile")
+        pod(name = "Pushy") {
+            version = "1.0.51"
+            extraOpts += listOf("-compiler-option", "-fmodules")
+        }
+        framework {
+            baseName = "shared"
+        }
+    }
+
     sourceSets {
         commonMain.dependencies {
             // put your Multiplatform dependencies here
@@ -69,6 +85,7 @@ kotlin {
             implementation(libs.coroutines.playservices)
             implementation(libs.ktor.client.android)
             implementation(libs.sqldelight.android.driver)
+            implementation(libs.pushy.android)
         }
 
         iosMain.dependencies {

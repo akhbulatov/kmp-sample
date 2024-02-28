@@ -15,6 +15,7 @@ voyager = "1.0.0"
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
 compose-multiplatform = { id = "org.jetbrains.compose", version = "1.5.12" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 sqldelight = { id = "app.cash.sqldelight", version.ref = "sqldelight" }
@@ -46,6 +47,8 @@ sqldelight-coroutines = { module = "app.cash.sqldelight:coroutines-extensions", 
 
 voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
 voyager-screenModel = { module = "cafe.adriel.voyager:voyager-screenmodel", version.ref = "voyager" }
+
+pushy-android = "me.pushy:sdk:1.0.106"
 
 qrose = "io.github.alexzhirkevich:qrose:1.0.0-beta3" # QR code
 napier = "io.github.aakira:napier:2.7.1"
