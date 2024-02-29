@@ -1,4 +1,4 @@
-package feature.barcode
+package feature.barcodegenerator
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -13,7 +13,7 @@ import androidx.compose.ui.Modifier
 import cafe.adriel.voyager.core.screen.Screen
 import io.github.alexzhirkevich.qrose.rememberQrCodePainter
 
-object BarcodeScreen : Screen {
+object BarcodeGeneratorScreen : Screen {
 
     @Composable
     override fun Content() {
@@ -24,7 +24,7 @@ object BarcodeScreen : Screen {
             ) {
                 TopAppBar(
                     title = {
-                        Text(text = "Barcode")
+                        Text(text = "Barcode Generator")
                     }
                 )
                 Box(

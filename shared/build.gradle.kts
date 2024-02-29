@@ -48,6 +48,14 @@ kotlin {
             version = "1.0.51"
             extraOpts += listOf("-compiler-option", "-fmodules")
         }
+//        pod(name = "GoogleMLKit/BarcodeScanning") {
+//            moduleName = "MLKitBarcodeScanning"
+//            version = "3.2.0"
+//        }
+//        pod("GoogleMLKit/Vision") {
+//            moduleName = "MLKitVision"
+//            version = "3.2.0"
+//        }
         framework {
             baseName = "shared"
         }
@@ -73,6 +81,8 @@ kotlin {
             implementation(libs.voyager.screenModel)
             implementation(libs.qrose)
             implementation(libs.napier)
+
+            implementation("dev.icerock.moko:permissions-compose:0.17.0")
         }
 
         androidMain.dependencies {
@@ -80,12 +90,21 @@ kotlin {
             implementation(libs.androidx.activity.compose)
 
             implementation(libs.playservices.location)
+            implementation(libs.playservices.mlkit.barcodescanning)
 
             implementation(libs.coroutines.android)
             implementation(libs.coroutines.playservices)
             implementation(libs.ktor.client.android)
             implementation(libs.sqldelight.android.driver)
             implementation(libs.pushy.android)
+            implementation(libs.mlkit.barcodescanner.android)
+
+            implementation("androidx.core:core-ktx:1.12.0")
+            val camerax_version = "1.3.1"
+            implementation("androidx.camera:camera-core:${camerax_version}")
+            implementation("androidx.camera:camera-camera2:${camerax_version}")
+            implementation("androidx.camera:camera-lifecycle:${camerax_version}")
+            implementation("androidx.camera:camera-view:${camerax_version}")
         }
 
         iosMain.dependencies {

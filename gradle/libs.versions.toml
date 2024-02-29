@@ -27,6 +27,7 @@ androidx-activity-compose = { module = "androidx.activity:activity-compose", ver
 androidx-datastore-core = "androidx.datastore:datastore-preferences-core:1.1.0-beta01"
 
 playservices-location = "com.google.android.gms:play-services-location:21.1.0"
+playservices-mlkit-barcodescanning = "com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0"
 
 coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
@@ -51,4 +52,5 @@ voyager-screenModel = { module = "cafe.adriel.voyager:voyager-screenmodel", vers
 pushy-android = "me.pushy:sdk:1.0.106"
 
 qrose = "io.github.alexzhirkevich:qrose:1.0.0-beta3" # QR code
+mlkit-barcodescanner-android = "com.google.mlkit:barcode-scanning:17.2.0"
 napier = "io.github.aakira:napier:2.7.1"
