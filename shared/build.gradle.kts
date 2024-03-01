@@ -48,14 +48,6 @@ kotlin {
             version = "1.0.51"
             extraOpts += listOf("-compiler-option", "-fmodules")
         }
-//        pod(name = "GoogleMLKit/BarcodeScanning") {
-//            moduleName = "MLKitBarcodeScanning"
-//            version = "3.2.0"
-//        }
-//        pod("GoogleMLKit/Vision") {
-//            moduleName = "MLKitVision"
-//            version = "3.2.0"
-//        }
         framework {
             baseName = "shared"
         }
@@ -79,15 +71,20 @@ kotlin {
             implementation(libs.androidx.datastore.core)
             implementation(libs.voyager.navigator)
             implementation(libs.voyager.screenModel)
+            implementation(libs.moko.permissions.compose)
             implementation(libs.qrose)
             implementation(libs.napier)
-
-            implementation("dev.icerock.moko:permissions-compose:0.17.0")
         }
 
         androidMain.dependencies {
             implementation(libs.androidx.activity)
             implementation(libs.androidx.activity.compose)
+            implementation(libs.androidx.core.ktx)
+
+            implementation(libs.androidx.camera.core)
+            implementation(libs.androidx.camera.camera2)
+            implementation(libs.androidx.camera.lifecycle)
+            implementation(libs.androidx.camera.view)
 
             implementation(libs.playservices.location)
             implementation(libs.playservices.mlkit.barcodescanning)
@@ -98,13 +95,6 @@ kotlin {
             implementation(libs.sqldelight.android.driver)
             implementation(libs.pushy.android)
             implementation(libs.mlkit.barcodescanner.android)
-
-            implementation("androidx.core:core-ktx:1.12.0")
-            val camerax_version = "1.3.1"
-            implementation("androidx.camera:camera-core:${camerax_version}")
-            implementation("androidx.camera:camera-camera2:${camerax_version}")
-            implementation("androidx.camera:camera-lifecycle:${camerax_version}")
-            implementation("androidx.camera:camera-view:${camerax_version}")
         }
 
         iosMain.dependencies {
