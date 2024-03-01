@@ -14,7 +14,8 @@ import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import feature.auth.AuthScreen
-import feature.barcode.BarcodeScreen
+import feature.barcodegenerator.BarcodeGeneratorScreen
+import feature.barcodescanner.BarcodeScannerScreen
 import feature.location.LocationScreen
 import feature.repo.ReposScreen
 import feature.search.SearchScreen
@@ -53,9 +54,14 @@ object MainScreen : Screen {
                     Text(text = "Location")
                 }
                 Button(
-                    onClick = { navigator.push(BarcodeScreen) }
+                    onClick = { navigator.push(BarcodeGeneratorScreen) }
                 ) {
-                    Text(text = "Barcode")
+                    Text(text = "Barcode Generator")
+                }
+                Button(
+                    onClick = { navigator.push(BarcodeScannerScreen) }
+                ) {
+                    Text(text = "Barcode Scanner")
                 }
             }
         }

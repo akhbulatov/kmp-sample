@@ -71,6 +71,7 @@ kotlin {
             implementation(libs.androidx.datastore.core)
             implementation(libs.voyager.navigator)
             implementation(libs.voyager.screenModel)
+            implementation(libs.moko.permissions.compose)
             implementation(libs.qrose)
             implementation(libs.napier)
         }
@@ -78,14 +79,22 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.androidx.activity)
             implementation(libs.androidx.activity.compose)
+            implementation(libs.androidx.core.ktx)
+
+            implementation(libs.androidx.camera.core)
+            implementation(libs.androidx.camera.camera2)
+            implementation(libs.androidx.camera.lifecycle)
+            implementation(libs.androidx.camera.view)
 
             implementation(libs.playservices.location)
+            implementation(libs.playservices.mlkit.barcodescanning)
 
             implementation(libs.coroutines.android)
             implementation(libs.coroutines.playservices)
             implementation(libs.ktor.client.android)
             implementation(libs.sqldelight.android.driver)
             implementation(libs.pushy.android)
+            implementation(libs.mlkit.barcodescanner.android)
         }
 
         iosMain.dependencies {

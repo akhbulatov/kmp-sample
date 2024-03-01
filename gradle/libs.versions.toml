@@ -5,6 +5,7 @@ android-targetSdk = "34"
 
 agp = "8.2.2"
 androidx-activity = "1.8.2"
+androidx-camera = "1.3.1"
 kotlin = "1.9.22"
 coroutines = "1.7.3"
 ktor = "2.3.8"
@@ -23,10 +24,17 @@ sqldelight = { id = "app.cash.sqldelight", version.ref = "sqldelight" }
 [libraries]
 androidx-activity = { module = "androidx.activity:activity", version.ref = "androidx-activity" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
+androidx-core-ktx = "androidx.core:core-ktx:1.12.0"
+
+androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "androidx-camera" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "androidx-camera" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "androidx-camera" }
+androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "androidx-camera" }
 
 androidx-datastore-core = "androidx.datastore:datastore-preferences-core:1.1.0-beta01"
 
 playservices-location = "com.google.android.gms:play-services-location:21.1.0"
+playservices-mlkit-barcodescanning = "com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0"
 
 coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
@@ -48,7 +56,10 @@ sqldelight-coroutines = { module = "app.cash.sqldelight:coroutines-extensions", 
 voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
 voyager-screenModel = { module = "cafe.adriel.voyager:voyager-screenmodel", version.ref = "voyager" }
 
+moko-permissions-compose = "dev.icerock.moko:permissions-compose:0.17.0"
+
 pushy-android = "me.pushy:sdk:1.0.106"
 
 qrose = "io.github.alexzhirkevich:qrose:1.0.0-beta3" # QR code
+mlkit-barcodescanner-android = "com.google.mlkit:barcode-scanning:17.2.0"
 napier = "io.github.aakira:napier:2.7.1"

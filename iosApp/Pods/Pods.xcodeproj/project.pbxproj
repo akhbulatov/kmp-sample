@@ -9,12 +9,13 @@
 /* Begin PBXAggregateTarget section */
 		8777C9F6889E59EFFD631D80AEE9048B /* shared */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 0E7795BF7F517B727F7E6C9CD8EB6E44 /* Build configuration list for PBXAggregateTarget "shared" */;
+			buildConfigurationList = EF9298212DDBBAF2CE9FF31F3BF4C6DB /* Build configuration list for PBXAggregateTarget "shared" */;
 			buildPhases = (
-				F796A1B3CF2B7C96859085D9A24797C7 /* [CP-User] Build shared */,
+				F0A39F7FB1EC9E905988474622138E4D /* [CP-User] Build shared */,
+				349D5464DCB36158AF2E103AE1BAF500 /* [CP] Copy dSYMs */,
 			);
 			dependencies = (
-				9885DB6E79D3D1A5454E03CC4AC2952C /* PBXTargetDependency */,
+				6A9EE897AE4110B44C3793EB789CABF5 /* PBXTargetDependency */,
 			);
 			name = shared;
 		};
@@ -110,14 +111,14 @@
 			remoteGlobalIDString = B017CC75E2704C686AA0A2203247D9C7;
 			remoteInfo = MqttCocoaAsyncSocket;
 		};
-		5F4A980B4729D4245AA4F8FF5B64821B /* PBXContainerItemProxy */ = {
+		75702F629F7AE3A444B87D81F0CAAF1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E3507335EAF862EA24882B8C7C2B8D79;
 			remoteInfo = Pushy;
 		};
-		75702F629F7AE3A444B87D81F0CAAF1C /* PBXContainerItemProxy */ = {
+		98734D108DD1975F3CED2C1EE6D9C58F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -155,7 +156,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008A9DE816B822B93AFB1BC05161EE9F /* shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.debug.xcconfig; sourceTree = "<group>"; };
 		015E0D7EA7331961AB63E5AFECA86BB5 /* Pods-iosApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iosApp-umbrella.h"; sourceTree = "<group>"; };
 		0317630057E455DD5E89D5E533D06CE2 /* MGCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCDAsyncUdpSocket.m; path = Source/GCD/MGCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		03E6745E0F85BC571953BD0E8896F1B3 /* PushyRegistrationException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushyRegistrationException.swift; path = PushySDK/PushyRegistrationException.swift; sourceTree = "<group>"; };
@@ -164,13 +164,13 @@
 		08DE826BB58AC8456D39338C267DB337 /* MqttCocoaAsyncSocket */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MqttCocoaAsyncSocket; path = MqttCocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2E419A81F44B225BC144A5AA4F0988 /* CocoaMQTT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTT.swift; path = Source/CocoaMQTT.swift; sourceTree = "<group>"; };
 		0E78B5D95BE10E78021B84A2C034B853 /* MqttConnectProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MqttConnectProperties.swift; path = Source/MqttConnectProperties.swift; sourceTree = "<group>"; };
+		0ED73656EAC81A4A577AB71B3887841A /* compose-resources */ = {isa = PBXFileReference; includeInIndex = 1; name = "compose-resources"; path = "build/compose/ios/shared/compose-resources"; sourceTree = "<group>"; };
 		104393BA82CA9FA19F156E53D9641C6E /* TCPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = PushySDK/SwiftSocket/TCPClient.swift; sourceTree = "<group>"; };
 		110F9CF1B7058184D77C2A5BD79E4F13 /* yudpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = yudpsocket.c; path = PushySDK/SwiftSocket/yudpsocket.c; sourceTree = "<group>"; };
 		11C9B998CE0869936AE6BE69270DAAC9 /* Pods-iosApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iosApp.modulemap"; sourceTree = "<group>"; };
 		136153465577E9280FA3DA6C72264F43 /* MqttCocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MqttCocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
 		15A52F58F87DFBB7E812C83F1F776B62 /* PushyResponseException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushyResponseException.swift; path = PushySDK/PushyResponseException.swift; sourceTree = "<group>"; };
 		1E49F17D9D39C03AD5A9F4BD3A1A148E /* MqttDecodePubRel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MqttDecodePubRel.swift; path = Source/MqttDecodePubRel.swift; sourceTree = "<group>"; };
-		203F11D202CA1846ED6084F2F3A2CCD4 /* compose-resources */ = {isa = PBXFileReference; includeInIndex = 1; name = "compose-resources"; path = "build/compose/ios/shared/compose-resources"; sourceTree = "<group>"; };
 		22FBA61FDD811A82BF0536BE25EA0887 /* CocoaMQTTTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTTimer.swift; path = Source/CocoaMQTTTimer.swift; sourceTree = "<group>"; };
 		244FC2DAA936A0B07ACEFDC74E2D54B8 /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 		256641F20BE0EBB2F8E87A19137D3F4D /* MqttDecodePubRec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MqttDecodePubRec.swift; path = Source/MqttDecodePubRec.swift; sourceTree = "<group>"; };
@@ -184,6 +184,7 @@
 		38FC49FE9CD977DC1B106E5936F648BF /* CocoaMQTTLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTLogger.swift; path = Source/CocoaMQTTLogger.swift; sourceTree = "<group>"; };
 		3AC64A4611E03433F994495E18FF01ED /* FramePubAck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FramePubAck.swift; path = Source/FramePubAck.swift; sourceTree = "<group>"; };
 		3BB8550E63254008D5327DDB3B097043 /* CocoaMQTTStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTStorage.swift; path = Source/CocoaMQTTStorage.swift; sourceTree = "<group>"; };
+		45C4CE935226842C9C4ED56518FC9E99 /* shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.debug.xcconfig; sourceTree = "<group>"; };
 		46853F568D4EDAD6DB9F4B3331CCA1B0 /* Pushy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pushy-prefix.pch"; sourceTree = "<group>"; };
 		47A4938CEEEDA2D3B02500852C3842F2 /* SwiftSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSocket.h; path = PushySDK/SwiftSocket/SwiftSocket.h; sourceTree = "<group>"; };
 		484D4042201F56416FB25EDEACD9AAF3 /* PushyAPNs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushyAPNs.swift; path = PushySDK/PushyAPNs.swift; sourceTree = "<group>"; };
@@ -207,11 +208,11 @@
 		71A6B877A1B2CD59D5421003FF267C00 /* Pushy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pushy.modulemap; sourceTree = "<group>"; };
 		76355514EC40B11D0FA91F1BB5B5229D /* UDPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = PushySDK/SwiftSocket/UDPClient.swift; sourceTree = "<group>"; };
 		76A263267985B0185D85E24D40FCEE9A /* Pods-iosApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iosApp-Info.plist"; sourceTree = "<group>"; };
-		76A970C5768DEF9352C145D1637136A3 /* shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.release.xcconfig; sourceTree = "<group>"; };
 		76D28488EA8CF5C697DFF07967A9960E /* Pods-iosApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iosApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		772CCE27224F4177B253C318D6590AF5 /* Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Frame.swift; path = Source/Frame.swift; sourceTree = "<group>"; };
 		77D60ABB28B43648F9B764249286A2DC /* MqttSubscription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MqttSubscription.swift; path = Source/MqttSubscription.swift; sourceTree = "<group>"; };
 		7872F92C038434C1D8A73587769B9827 /* MqttDecodePubAck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MqttDecodePubAck.swift; path = Source/MqttDecodePubAck.swift; sourceTree = "<group>"; };
+		79B2A0AF89EC17AEC81F524606E0B865 /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7ABAB7562D0623DFC2D01E0A09448472 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		7B1458FCBB15D453F60621C267B8FF48 /* CocoaMQTT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaMQTT-dummy.m"; sourceTree = "<group>"; };
 		7B654FCE78ABB501ED1BD4FB93DD851D /* Pushy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pushy-Info.plist"; sourceTree = "<group>"; };
@@ -236,9 +237,8 @@
 		BF48B372C35AE939D6AC57D8B625AF2C /* MGCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCDAsyncUdpSocket.h; path = Source/GCD/MGCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		C4C003C6FC4DDA20079FDA50A7887817 /* CocoaMQTTReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTReader.swift; path = Source/CocoaMQTTReader.swift; sourceTree = "<group>"; };
 		C615D7CD3C9B2C64984518E67180F0D2 /* FramePubRel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FramePubRel.swift; path = Source/FramePubRel.swift; sourceTree = "<group>"; };
-		CB3DDB432A4FDC06767575C61C8ADA0A /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C916C3C1E3955B78D21CF3577EC4AE64 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = build/cocoapods/framework/shared.framework; sourceTree = "<group>"; };
 		CC6EDBEF5206B8D0047A2B936007AA44 /* FrameUnsubscribe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameUnsubscribe.swift; path = Source/FrameUnsubscribe.swift; sourceTree = "<group>"; };
-		CEF5FB4EEEFBEA291F9DDEDDDF0BE0C4 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = build/cocoapods/framework/shared.framework; sourceTree = "<group>"; };
 		D1FF0C1CC5A3B5D296A603FFDD08B19D /* MqttCocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MqttCocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
 		D3FD21A05BC6C2F9C04D0C44CC9932BD /* FramePingResp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FramePingResp.swift; path = Source/FramePingResp.swift; sourceTree = "<group>"; };
 		D7BEED9D590F07B2443DD5C43B00C3E6 /* MqttAuthProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MqttAuthProperties.swift; path = Source/MqttAuthProperties.swift; sourceTree = "<group>"; };
@@ -253,10 +253,12 @@
 		E6A4E1627379D6540B81A470C575D716 /* CocoaMQTT */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaMQTT; path = CocoaMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DB2A5F5DADA1DDE45F36B1A2D6AC16 /* Pods-iosApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iosApp-dummy.m"; sourceTree = "<group>"; };
 		E90AEEC0F6D85D503053AD5B129A0276 /* CocoaMQTTReasonCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTReasonCode.swift; path = Source/CocoaMQTTReasonCode.swift; sourceTree = "<group>"; };
+		E90E051091BB80CC033EE81FABF7D9E0 /* shared-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "shared-copy-dsyms.sh"; sourceTree = "<group>"; };
 		E9A3BC1A036CBF625478A4278E039416 /* Pushy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pushy.release.xcconfig; sourceTree = "<group>"; };
 		EBBFD96DE46764D1B2B3EE941A3EF0E7 /* MqttCocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MqttCocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
 		EC135AAE3EFBA37092601F879BBD40BB /* FramePubRec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FramePubRec.swift; path = Source/FramePubRec.swift; sourceTree = "<group>"; };
 		ED537EE5566F6AC02798D2AE76F5B767 /* Pushy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pushy-dummy.m"; sourceTree = "<group>"; };
+		EEA5077DDA7BB8A657A8E368DF234184 /* shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.release.xcconfig; sourceTree = "<group>"; };
 		F06182786B6F34D83BF47E3B7B115BFE /* MqttDecodeUnsubAck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MqttDecodeUnsubAck.swift; path = Source/MqttDecodeUnsubAck.swift; sourceTree = "<group>"; };
 		F0DBF6427AD7B772D9304C0323FB043B /* PushyKeychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushyKeychain.swift; path = PushySDK/PushyKeychain.swift; sourceTree = "<group>"; };
 		F4E3784972E8DFA44A188AB610C9F961 /* CocoaMQTTTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTTypes.swift; path = Source/CocoaMQTTTypes.swift; sourceTree = "<group>"; };
@@ -337,12 +339,16 @@
 			path = CocoaMQTT;
 			sourceTree = "<group>";
 		};
-		39F973608F645D55C358F8551EDDE8C5 /* Frameworks */ = {
+		358E7FF7E9C3861C16F1ADF16B75FB83 /* shared */ = {
 			isa = PBXGroup;
 			children = (
-				CEF5FB4EEEFBEA291F9DDEDDDF0BE0C4 /* shared.framework */,
+				0ED73656EAC81A4A577AB71B3887841A /* compose-resources */,
+				A556930AAB6E9100B21D359E11DECD9D /* Frameworks */,
+				862074657065839A8DA98C446343DE02 /* Pod */,
+				EF2A358C60DB612B50715907203957D4 /* Support Files */,
 			);
-			name = Frameworks;
+			name = shared;
+			path = ../../shared;
 			sourceTree = "<group>";
 		};
 		413E41BBC0951B01D981BBE751CB8E0F /* MqttCocoaAsyncSocket */ = {
@@ -373,42 +379,28 @@
 			path = "../Target Support Files/MqttCocoaAsyncSocket";
 			sourceTree = "<group>";
 		};
-		4F9652C7FDB8CFF118333C17A5A41C8F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				CB3DDB432A4FDC06767575C61C8ADA0A /* shared.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		5010BA8DC1346A70C49ED90E48C98857 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				008A9DE816B822B93AFB1BC05161EE9F /* shared.debug.xcconfig */,
-				76A970C5768DEF9352C145D1637136A3 /* shared.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../iosApp/Pods/Target Support Files/shared";
-			sourceTree = "<group>";
-		};
 		58AAD176B64323B9974E5B70EC8B12DC /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8BADB6F22C77C34444BC9D80F04C298D /* shared */,
+				358E7FF7E9C3861C16F1ADF16B75FB83 /* shared */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		8BADB6F22C77C34444BC9D80F04C298D /* shared */ = {
+		862074657065839A8DA98C446343DE02 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				203F11D202CA1846ED6084F2F3A2CCD4 /* compose-resources */,
-				39F973608F645D55C358F8551EDDE8C5 /* Frameworks */,
-				4F9652C7FDB8CFF118333C17A5A41C8F /* Pod */,
-				5010BA8DC1346A70C49ED90E48C98857 /* Support Files */,
+				79B2A0AF89EC17AEC81F524606E0B865 /* shared.podspec */,
 			);
-			name = shared;
-			path = ../../shared;
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A556930AAB6E9100B21D359E11DECD9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C916C3C1E3955B78D21CF3577EC4AE64 /* shared.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A8903F4745B80A5AC50A3E6CE27C2FEA /* Pods */ = {
@@ -570,6 +562,17 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CocoaMQTT";
+			sourceTree = "<group>";
+		};
+		EF2A358C60DB612B50715907203957D4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E90E051091BB80CC033EE81FABF7D9E0 /* shared-copy-dsyms.sh */,
+				45C4CE935226842C9C4ED56518FC9E99 /* shared.debug.xcconfig */,
+				EEA5077DDA7BB8A657A8E368DF234184 /* shared.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../iosApp/Pods/Target Support Files/shared";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -754,7 +757,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F796A1B3CF2B7C96859085D9A24797C7 /* [CP-User] Build shared */ = {
+		349D5464DCB36158AF2E103AE1BAF500 /* [CP] Copy dSYMs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/shared/shared-copy-dsyms-input-files.xcfilelist",
+			);
+			name = "[CP] Copy dSYMs";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/shared/shared-copy-dsyms-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/shared/shared-copy-dsyms.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0A39F7FB1EC9E905988474622138E4D /* [CP-User] Build shared */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -882,11 +902,11 @@
 			target = E3507335EAF862EA24882B8C7C2B8D79 /* Pushy */;
 			targetProxy = 75702F629F7AE3A444B87D81F0CAAF1C /* PBXContainerItemProxy */;
 		};
-		9885DB6E79D3D1A5454E03CC4AC2952C /* PBXTargetDependency */ = {
+		6A9EE897AE4110B44C3793EB789CABF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Pushy;
 			target = E3507335EAF862EA24882B8C7C2B8D79 /* Pushy */;
-			targetProxy = 5F4A980B4729D4245AA4F8FF5B64821B /* PBXContainerItemProxy */;
+			targetProxy = 98734D108DD1975F3CED2C1EE6D9C58F /* PBXContainerItemProxy */;
 		};
 		BD289574A9696D86C7FA746E6155418E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1015,24 +1035,6 @@
 			};
 			name = Debug;
 		};
-		1CD20DBAF6A7906708322E989C2B0803 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76A970C5768DEF9352C145D1637136A3 /* shared.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		2014D510675AC8DE98BF6F7F115E5A23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9A3BC1A036CBF625478A4278E039416 /* Pushy.release.xcconfig */;
@@ -1127,6 +1129,24 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EE450A4B0E4C3B8C5BACE59BB95B2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA5077DDA7BB8A657A8E368DF234184 /* shared.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1337,9 +1357,9 @@
 			};
 			name = Debug;
 		};
-		D8A2A87843392BD025EADAFA2362E03C /* Debug */ = {
+		BFF56BCC9778F077A87823D2F39A9EFB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 008A9DE816B822B93AFB1BC05161EE9F /* shared.debug.xcconfig */;
+			baseConfigurationReference = 45C4CE935226842C9C4ED56518FC9E99 /* shared.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1357,15 +1377,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E7795BF7F517B727F7E6C9CD8EB6E44 /* Build configuration list for PBXAggregateTarget "shared" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8A2A87843392BD025EADAFA2362E03C /* Debug */,
-				1CD20DBAF6A7906708322E989C2B0803 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3ABDDB4167E34C01CB195655EEA9379C /* Build configuration list for PBXNativeTarget "CocoaMQTT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1398,6 +1409,15 @@
 			buildConfigurations = (
 				864BE6F1ACF1A2BE302C23C8C591EC3F /* Debug */,
 				9166EA40F24D039D2D42FE97D6ABA1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9298212DDBBAF2CE9FF31F3BF4C6DB /* Build configuration list for PBXAggregateTarget "shared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF56BCC9778F077A87823D2F39A9EFB /* Debug */,
+				7EE450A4B0E4C3B8C5BACE59BB95B2F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
